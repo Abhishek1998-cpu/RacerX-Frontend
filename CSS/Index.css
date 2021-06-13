@@ -1,0 +1,589 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  /* overflow-y: hidden; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* background-color: blue; */
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../Images/Car.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+  /* object-fit: contain; */
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  opacity: 0.3;
+  z-index: -1;
+  background: linear-gradient(to right, #000000 0%, #000000 0%, #000000 100%);
+}
+
+.navbar:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  opacity: 0.3;
+  z-index: -1;
+  background: linear-gradient(to right, #000000 0%, #000000 0%, #000000 100%);
+}
+
+.nav-item a {
+  color: white !important;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: blue !important;
+}
+
+li {
+  list-style: none;
+}
+
+.center-div p {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+.header-section {
+  width: 100%;
+  height: inherit;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.center-div {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* -ms for Microsoft  */
+  -ms-transform: translate(-50%, -50%);
+  /* -webkit for Old Browsers  */
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a {
+  padding: 5px 20px;
+  background-color: blue;
+  color: white;
+  /* border: 2px white solid; */
+  border-radius: 100px;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.header-buttons a:hover {
+  background: gray !important;
+  color: white !important;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.center-div p {
+  font-size: 1.2rem;
+  padding: 5px;
+  color: white;
+  font-weight: 500;
+}
+
+/* Three Cards Section  */
+.header-extradiv {
+  width: 100%;
+  height: auto;
+  margin: 100px 0;
+  text-align: center;
+}
+
+.extra-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: medium none;
+  padding: 50px !important;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.extra-div h2 {
+  font-size: 1.5rem;
+  margin: 20px 0 15px 0;
+  font-weight: bold;
+  line-height: 1.1;
+  word-spacing: 4px;
+}
+
+.extra-div p {
+  font-weight: 800;
+  /* color: red; */
+}
+
+.extra-div:hover {
+  /* background-color: black; */
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.9);
+  /* For pushing the cards a bit over We will use Transform  */
+  transform: translateY(-20px);
+}
+
+/* Three Cards Section Ends */
+
+/* Offer Section Starts  */
+
+.serviceoffers {
+  background-color: #f8f8ff;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+
+.headings {
+  margin-bottom: 50px;
+}
+
+.headings p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.names {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-top: 15px;
+  font-weight: 900 !important;
+}
+
+.serviceIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress {
+  margin: 5px;
+  height: 0.8rem !important;
+  /* padding: 10px; */
+}
+
+/* Offer Section Ends  */
+
+/* Project Stats Start  */
+
+/* .stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+} */
+
+.project-work {
+  margin: 100px 0;
+}
+
+.project-work h4 {
+  font-weight: 900 !important;
+  /* color: red;  */
+}
+
+.project-work p {
+  font-weight: 500;
+}
+
+/* Project Stats Ends   */
+
+/* Pricing Section Starts  */
+.pricing {
+  padding: 50px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.features {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.card {
+  /* width: 300px; */
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-second {
+  transform: translateY(-20px);
+  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);  */
+}
+
+.card-second:hover {
+  transform: translateY(-40px);
+}
+
+.pricing:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  opacity: 0.3;
+  z-index: -1;
+  background: linear-gradient(160deg, #000000 55%, #fff 0%);
+}
+
+.money {
+  font-size: 40px;
+  line-height: 1;
+  color: green;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* padding: 25px !important; */
+  padding-top: 20px !important;
+}
+
+.CardButton {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.CardButton {
+  padding: 5px 20px !important;
+  background-color: green !important;
+  color: white;
+  /* border: 2px white solid; */
+  border-radius: 100px !important;
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  line-height: 1.4 !important;
+  text-align: center;
+}
+
+.CardButton:hover {
+  background: white !important;
+  color: black !important;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Pricing Section Ends  */
+
+/* Carousel Section Starts  */
+
+.happy-clients {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 80px 0;
+}
+
+.box {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.box:hover {
+  background: #303030;
+  color: white;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -60px !important;
+}
+
+.carousel-indicators button {
+  background-color: blue !important;
+}
+
+.box a {
+  position: relative;
+}
+
+.box a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.box a:after {
+  content: "\f10d";
+  font-family: FontAwesome;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+  color: white;
+  position: absolute;
+  top: 120%;
+  left: 70%;
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box h1 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.box h2 {
+  font-size: 13px;
+  font-weight: 400px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Carousel Section Ends  */
+
+/* Contact form Starts  */
+
+.contact {
+  /* height: 100vh; */
+  margin-bottom: 50px;
+}
+
+.contact:before {
+  content: "";
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+  z-index: -1;
+  background: linear-gradient(330deg, #000000 55%, #fff 0%) !important;
+}
+
+.contactform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fields {
+  width: 600px !important;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50px !important;
+}
+
+.ContactButton {
+  margin-top: 20px !important;
+  /* margin-bottom: 20px !important; */
+}
+
+.ContactButton {
+  /* padding: 5px 20px !important; */
+  background-color: blue !important;
+  color: white;
+  /* border: 2px white solid; */
+  border-radius: 100px !important;
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  line-height: 1.4 !important;
+  text-align: center;
+}
+
+.ContactButton:hover {
+  background: white !important;
+  color: black !important;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.9);
+}
+::placeholder {
+  font-size: 0.9rem;
+}
+
+/* Contact form Ends  */
+
+/* Newsletter Starts Here  */
+.newsletter {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter a {
+  /* padding: 5px 20px !important; */
+  padding: 10px;
+  padding-right: 15px;
+  background-color: blue !important;
+  color: white;
+  /* border: 2px white solid; */
+  /* border-radius: 100px !important;  */
+  border-radius: 0px 100px 100px 0px !important;
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  line-height: 1.4 !important;
+  text-align: center;
+}
+
+.newsletter a:hover {
+  background-color: green !important;
+  color: white !important;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.fields2 {
+  width: 600px !important;
+  border-radius: 100px 0px 0px 100px !important;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Newsletter Ends Here  */
+
+/* Footer Section Starts  */
+
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+}
+
+footer p > span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+}
+
+/* It is Adjacent sibling combinator */
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+/* Footer Section Ends  */
+
+#mybtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  color: white;
+  background: blueviolet;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#mybtn:hover {
+  background: green;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Media Query Section  */
+
+@media (max-width: 768px) {
+  .nav-item {
+    text-align: center;
+  }
+  .pricing,
+  .happy-clients,
+  .contact {
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .card-second {
+    transform: translateY(0px);
+    margin: 30px 0;
+  }
+}
+
+/* Scrollbar Section  */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  /* border-radius: 10px; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
