@@ -195,26 +195,19 @@ li {
 .progress {
   margin: 5px;
   height: 0.8rem !important;
-  /* padding: 10px; */
 }
 
 /* Offer Section Ends  */
 
 /* Project Stats Start  */
 
-/* .stats {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-} */
-
 .project-work {
   margin: 100px 0;
+  margin-top: 50px !important;
 }
 
 .project-work h4 {
   font-weight: 900 !important;
-  /* color: red;  */
 }
 
 .project-work p {
@@ -229,6 +222,12 @@ li {
   width: 100%;
   height: 100vh;
   position: relative;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}
+
+.ourpricing {
+  padding: 20px !important;
 }
 
 .features {
@@ -237,7 +236,6 @@ li {
 }
 
 .card {
-  /* width: 300px; */
   transition: 0.4s ease;
 }
 
@@ -248,7 +246,6 @@ li {
 
 .card-second {
   transform: translateY(-20px);
-  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);  */
 }
 
 .card-second:hover {
@@ -276,7 +273,6 @@ li {
 .card-title {
   font-size: 1.5rem;
   font-weight: bold;
-  /* padding: 25px !important; */
   padding-top: 20px !important;
 }
 
@@ -289,7 +285,6 @@ li {
   padding: 5px 20px !important;
   background-color: green !important;
   color: white;
-  /* border: 2px white solid; */
   border-radius: 100px !important;
   font-size: 1rem !important;
   font-weight: 800 !important;
@@ -311,6 +306,8 @@ li {
   width: 100%;
   height: 100vh;
   padding-bottom: 80px 0;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
 }
 
 .box {
@@ -358,7 +355,6 @@ li {
   position: absolute;
   top: 120%;
   left: 70%;
-  /* border-radius: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -383,20 +379,7 @@ li {
 /* Contact form Starts  */
 
 .contact {
-  /* height: 100vh; */
   margin-bottom: 50px;
-}
-
-.contact:before {
-  content: "";
-  position: absolute !important;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.3;
-  z-index: -1;
-  background: linear-gradient(330deg, #000000 55%, #fff 0%) !important;
 }
 
 .contactform {
@@ -414,14 +397,11 @@ li {
 
 .ContactButton {
   margin-top: 20px !important;
-  /* margin-bottom: 20px !important; */
 }
 
 .ContactButton {
-  /* padding: 5px 20px !important; */
   background-color: blue !important;
   color: white;
-  /* border: 2px white solid; */
   border-radius: 100px !important;
   font-size: 1rem !important;
   font-weight: 800 !important;
@@ -450,13 +430,10 @@ li {
 }
 
 .newsletter a {
-  /* padding: 5px 20px !important; */
   padding: 10px;
   padding-right: 15px;
   background-color: blue !important;
   color: white;
-  /* border: 2px white solid; */
-  /* border-radius: 100px !important;  */
   border-radius: 0px 100px 100px 0px !important;
   font-size: 1rem !important;
   font-weight: 800 !important;
@@ -468,6 +445,11 @@ li {
   background-color: green !important;
   color: white !important;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.Newsletter {
+  margin-top: 30px !important;
+  margin-bottom: 50px !important;
 }
 
 .fields2 {
@@ -541,6 +523,10 @@ footer .column i + i {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
 }
 
+.column i {
+  color: green !important;
+}
+
 /* Media Query Section  */
 
 @media (max-width: 768px) {
@@ -586,4 +572,76 @@ footer .column i + i {
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
+}
+
+@media (max-width: 360px) {
+  * {
+    margin: 0px !important;
+    padding: 3px !important;
+  }
+  .togglebutton {
+    text-align: center !important;
+    color: lightcoral !important;
+    background-color: lightcoral !important;
+  }
+
+  .contactform {
+    margin-top: 20px !important;
+    text-align: center !important;
+    height: auto;
+  }
+
+  .fields {
+    text-align: center;
+    width: 200px !important;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50px !important;
+    font-size: 10px !important;
+    padding: 10px !important;
+  }
+
+  .fields3 {
+    text-align: center;
+    width: 200px !important;
+    border-radius: 50px !important;
+    font-size: 15px !important;
+    padding: 10px !important;
+    color: gray !important;
+  }
+
+  .contact {
+    margin-top: 100px !important;
+    margin-bottom: 50px !important;
+    padding: 20px;
+  }
+
+  .footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .AboutUs {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .features {
+    text-align: center !important;
+  }
+
+  .featurestop {
+    margin-top: 50px !important;
+  }
+
+  .ContactButton {
+    padding: 5px !important;
+  }
 }
